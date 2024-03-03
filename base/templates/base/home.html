@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'base/css/home.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="{% static 'base/images/GDSCHCMUTE_LOGO_Vertical_White.png' %}"
+          alt=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'about' %}">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-2 text">
+        <h1>Git & GitHub Study Jam<br /></h1>
+        <h2>GDSC - HCMUTE 2024</h2>
+        <a href="{% url 'about' %}" class="explore">Explore Now &#10138;</a>
+      </div>
+      <div class="col-2">
+        <div>
+          <p class="groupPic-text">WE ARE TRÔN UTE</p>
+          <div class="groupPic-container">
+            <img
+              src="{% static 'base/images/teletubbies-background-lvj1jnjbgnojl40w.jpg' %}"
+              alt="groupPic"
+              class="groupPic"
+            />
+          </div>
+          <div>
+            <p class="groupSlogan-text">ONE TEAM ONE MISSION</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>&copy; Trôn UTE</div>
+    </footer>
+  </body>
+</html>

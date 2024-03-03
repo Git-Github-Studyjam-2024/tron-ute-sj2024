@@ -1,0 +1,168 @@
+* {
+  transition: 0.3s ease;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+h2.intro {
+  font-family: "Share Tech", sans-serif;
+  color: #000;
+  margin-top: 0;
+  font-size: 80px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+footer div {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+a {
+  margin: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+}
+.logo img {
+  width: 400px;
+  height: auto;
+}
+
+a:hover {
+  color: #ffcb03;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.col-2 {
+  flex: 1;
+  text-align: left;
+}
+
+.row .text {
+  padding-left: 3em;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 10px 0;
+}
+.col-2 h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.explore {
+  display: inline-block;
+  background: #020202;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 10px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+  font-weight: 650;
+}
+
+.explore:hover {
+  background: #020202;
+  color: #ffcc00;
+}
+.groupPic {
+  width: 80%; /* Set the width to 100% of its parent container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.groupPic-container {
+  position: relative;
+}
+
+.groupPic-text {
+  margin: 0;
+  position: static;
+  top: 80px; /* Điều chỉnh khoảng cách từ trên xuống theo ý muốn
+  /*  */
+  /* transform: translateX(-50%); */
+  color: #ffcc00;
+  font-size: 30px;
+  left: 50%;
+  font-weight: bold;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  /* Thêm các thuộc tính CSS khác tùy thuộc vào thiết kế của bạn */
+}
+.groupSlogan-text {
+  margin: 0;
+  position: sticky;
+  top: 80px; /* Điều chỉnh khoảng cách từ trên xuống theo ý muốn
+  /*  */
+  width: 400px;
+  transform: translateX(220px);
+  color: #000;
+  font-size: 30px;
+  /* right: 50%; */
+  font-weight: bold;
+  text-shadow: -3px -3px 0 #ffcc00, 3px -3px 0 #ffcc00, -3px 3px 0 #ffcc00,
+    3px 3px 0 #ffcc00;
+}
